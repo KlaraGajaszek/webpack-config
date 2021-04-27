@@ -3,20 +3,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
-  devtool: 'inline-source-map',
+  entry: './src/index.js', // entry file to bundler
+  devtool: 'inline-source-map', // tool to create dourc-map in browser
   devServer: {
     // contentBase: './dist',
-    open: true,
+    open: true, // open new tab when webpack dev server start
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.html', // add template to bundle
     }),
   ],
   output: {
-    filename: '[name].[contenthash:12].js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    filename: '[name].[contenthash:12].js', // create name bundle file
+    path: path.resolve(__dirname, 'dist'), // add path bundle files
+    clean: true, // clean before build
   },
 }
