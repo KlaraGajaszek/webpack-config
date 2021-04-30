@@ -1,4 +1,5 @@
-import _ from 'lodash'
+import * as _ from 'lodash'
+import 'tailwindcss/tailwind.css'
 
 function component() {
   const element = document.createElement('div')
