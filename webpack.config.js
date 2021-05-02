@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.ts', // entry file to bundler
+  entry: './src/index.tsx', // entry file to bundler
   devtool: 'inline-source-map', // tool to create dourc-map in browser
   devServer: {
     // contentBase: './dist',
@@ -11,7 +11,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // add template to bundle
+      template: './public/index.html', // add template to bundle
+      favicon: './public/favicon.svg',
     }),
   ],
   module: {
@@ -24,6 +25,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [{ loader: 'file-loader' }],
       },
     ],
   },
