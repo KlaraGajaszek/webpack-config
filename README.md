@@ -1,4 +1,7 @@
-# Webpack configuration
+# Webpack, React, TypeScript, Tailwind and Jest configuration
+This is basic configuration/template for future react/ts projects
+
+The most important documentation fragment:
 
 Basic setup
 https://webpack.js.org/guides/getting-started/#basic-setup <br/>
