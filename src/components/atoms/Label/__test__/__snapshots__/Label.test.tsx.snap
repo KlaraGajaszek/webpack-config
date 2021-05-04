@@ -2,6 +2,7 @@
 
 exports[`Label renders correctly 1`] = `
 .c2 {
+  color: red;
   font-weight: 600;
 }
 
@@ -33,6 +34,7 @@ exports[`Label renders correctly 1`] = `
   </label>
   <span
     className="c2"
+    color="red"
     data-testid="labelTitleID"
   >
     title

@@ -12,24 +12,24 @@ import * as serviceWorker from './serviceWorker'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 export const store = createStore(
-  reducers,
-  composeEnhancers(applyMiddleware(thunk))
+    reducers,
+    composeEnhancers(applyMiddleware(thunk))
 )
 
 declare global {
-  interface Window {
-    __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose
-  }
+    interface Window {
+        __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose
+    }
 }
 
 ReactDOM.render(
-  <Provider store={store}>
-    <React.StrictMode>
-      <ModalContainer />
-      <App />
-    </React.StrictMode>
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <React.StrictMode>
+            <ModalContainer />
+            <App />
+        </React.StrictMode>
+    </Provider>,
+    document.getElementById('root')
 )
 
 // If you want your app to work offline and load faster, you can change
