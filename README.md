@@ -1,4 +1,4 @@
-# Webpack, React, TypeScript, Tailwind and Jest configuration
+# Webpack-react-typeScript-tailwind-jest configuration
 This is basic configuration/template for future react/ts projects
 
 The most important documentation fragment:
