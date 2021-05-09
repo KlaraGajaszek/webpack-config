@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content all styles should be render 1`] = `
+<button
+  className="bg-red text-red font-bold py-2 px-4 rounded text-xs"
+  onClick={[MockFunction]}
+>
+  test
+</button>
+`;
