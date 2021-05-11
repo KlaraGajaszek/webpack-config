@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "webpack",
-        "start": "webpack serve --open",
+        "build": "webpack --config webpack.prod.js",
+        "start": "webpack serve --config webpack.dev.js",
         "test": "jest"
     },
     "keywords": [],
